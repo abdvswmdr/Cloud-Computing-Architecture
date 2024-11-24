@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "karaman2011sampling"
+You've used 42 entries,
+            1876 wiz_defined-function locations,
+            747 strings with 12927 characters,
+and the built_in function-call counts, 12676 in all, are:
+= -- 1252
+> -- 501
+< -- 0
++ -- 184
+- -- 142
+* -- 888
+:= -- 1733
+add.period$ -- 51
+call.type$ -- 42
+change.case$ -- 44
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 688
+empty$ -- 1186
+format.name$ -- 142
+if$ -- 3131
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 38
+newline$ -- 138
+num.names$ -- 42
+pop$ -- 162
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 495
+stack$ -- 0
+substring$ -- 841
+swap$ -- 302
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 112
+width$ -- 44
+write$ -- 433
+(There was 1 warning)

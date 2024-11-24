@@ -1,0 +1,55 @@
+\newpage
+
+\section*{Abstract}
+The healthcare industry is facing challenges, notably the projected shortage of medical staff, especially nurses. This issue presents the urgent need for innovative solutions to alleviate the burden of healthcare professionals while still maintaining the standards of patient care. One critical area impacted by nursing shortages is the administration of medications. While yet time-consuming, this task occupies a substantial portion of nurses' workloads. In light of these challenges, the development of an autonomous medicine dispensing and distribution
+system emerges as a compelling solution. Such a robot will be able to autonomously navigate hospital wards, delivering prescribed medications directly to patients, thus reducing the workload on healthcare professionals.  
+
+
+\newpage
+
+\section{Introduction}
+\subsection{Problem Statement}
+The healthcare industry is grappling with a significant shortage of medical personnel, particularly nurses. 
+In Malaysia, it is projected that by 2030, the country may face a shortage of nurses by up to 60\%~\cite{dzulkefly2024nursing}.
+This shortage places immense pressure on existing healthcare professionals, leading to increased workloads, fatigue, and a higher likelihood of errors in patient care tasks such as medication delivery to patients~\cite{kennedy2003nursing}. 
+Delivery of medicine is very critical yet time-consuming responsibility that consume a substantial portion of nurses' time. 
+Also with the recent global pandemics like COVID-19, it further intensified these challenges by causing reduced contact between healthcare workers and patients to minimize the risk of infection~\cite{fawaz2020nurses}.
+This situation fits right well as automation problem since most of these tasks are done routinely and they can be automated, thereby reducing the burden on medical staff and enhancing patient safety.
+Currently, hospitals lack integrated systems capable of autonomously dispensing and delivering medications within the dynamic environment of a hospital ward. Reliance on manual processes not only strains the limited workforce but also increases the risk of human error. Therefore, developing an autonomous medicine dispensing and distribution robot emerges as a pivotal step toward addressing these critical issues.
+
+
+\subsection{Objectives}
+\begin{enumerate}
+    \item To develop a user-friendly interface that allows doctors and nurses to input destination instruction for robot navigation and to confirm that patient haas taken medication.  also for the patient to confirm that they have taken the medication if need be. 
+    \item The objective is to develop an autonomous robot that can navigate to a particular patient's location within a hospital ward~\cite{helpmate}, and dispense medication. The robot should be able to dodge and not collide with any obstacle~\cite{laserbased_zheng}~\cite{kruse2013human} on the way to the patient while performing the delivery task. An important consideration of the end-user should also be factored in since the robot will be interacting with patients who might be in sleeping or sitting position so they should be able to reach the robot and grab their medicine. The robot should be effectively incorporated into a typical hospital procedure without disrupting previously established practices~\cite{ahn2019hospital}. 
+\end{enumerate}
+
+
+\subsection{Scope}
+This research will be confined in three areas. The hardware development part involves selection
+and integration of suitable sensors, actuators, and hardware components. The software development part will
+utilize the ROS2 framework which is extensively used in research for implementing algorithms used robot for
+localization, mapping, navigation, and control systems. The system integration is
+the third area which involves combining the hardware and software parts.
+Appropriate microcontroller, single board computer (SBC), communication protocols, and
+network architecture will be selected and integrated to ensure the robot can perform its tasks effectively.
+\begin{comment}Multiple tests and experiments will be conducted to evaluate the solution being developed. The
+robot will be tested in a simulated environment to assess the suitability of the solutions implemented. \end{comment}
+Since this is a university project, it may not cover large-scale
+deployment logistics or long-term operational considerations. Some regulatory compliance aspects related to
+medical device certifications might also be overlooked.
+
+
+\subsection{Research Questions}
+\begin{enumerate}[label=\alph*)]
+    \item How can an autonomous robot be designed to navigate the dynamic environment of a hospital ward
+    with precise localization and obstacle avoidance to deliver medications to patients?
+    \item What ways can the user interface be designed to allow medical staff to input medication orders and monitor the robot's operations as it delivers medicine and interacts with the patient? 
+    \item How can the robot's performance be measured and validated in terms of navigation accuracy, medicine dispensation, and user satisfaction? 
+    \item What are the challenges and limitations in implementing an autonomous robot in a hospital setting, and how can it be mitigated to ensure successful deployment and operation?
+\end{enumerate}
+
+
+
+\subsection{Hypothesis}
+The autonomous medicine dispensing and distribution robot will significantly reduce the workload on nursing staff by automating routinely medicine delivery tasks. The errors occuring in medication administration will be minimized as compared to current manual processes. 

@@ -1,0 +1,147 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{amsfonts}
+\usepackage[table]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{matlab-prettifier} %  matlab code listings 
+\usepackage{graphicx}
+\usepackage{times}  % Font type 
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage[a4paper]{geometry}
+\usepackage{setspace} % Add this line to use the setspace package
+\usepackage{fancybox}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{wasysym}
+\usepackage{tocloft}
+\usepackage{makecell}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+
+
+
+\definecolor{maroon}{RGB}{128,0,0}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\definecolor{lightblue}{RGB}{173,216,230}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{darkblue}{RGB}{0, 0, 139} % Define a professional dark blue color
+
+
+% Set double spacing for the text
+\doublespacing% Add this line to set double spacing
+\geometry{
+  a4paper,
+  total={170mm,257mm},
+  left=20mm,
+  top=16mm,
+}
+\hypersetup{
+    colorlinks=true, % Enable colored links
+    linkcolor=black, % Internal links (e.g section headings and figure references)
+    citecolor=black, % Bibliography links
+    filecolor=magenta,      % File links 
+    urlcolor=cyan, % URLs
+    anchorcolor=darkblue,
+    pdftitle={Assignment 3}, 
+    pdfpagemode=FullScreen, 
+}
+
+% Custom command to make figure references blue
+\newcommand{\figref}[1]{\hyperref[#1]{\textcolor{darkblue}{Figure~\ref*{#1}}}}
+
+
+
+% Define subsubsubsection to appear in TOC
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\hspace{0pt}}
+
+% Set the TOC and section numbering depth to 4 to include paragraph level
+\setcounter{secnumdepth}{4} % For numbering sections up to paragraph level
+\setcounter{tocdepth}{4}    % For showing up to paragraph level in TOC
+
+
+
+
+\urlstyle{same}
+\newcommand{\figwidth}{4in}
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+\renewcommand\thesubsection{\thesection.\alph{subsection}}
+
+% Make section 1. , 1.1 and 1.1.1
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\title{Research Plan}
+\subtitle{Project Report}
+
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {\Large ENG40001 Final Year Research Project 1}\\[0.4cm]
+  \textbf{\large Research Plan}\\[0.7cm]
+  \rule{\textwidth}{0.9pt}\\[0.7cm]
+  {\LARGE \textbf{Autonomous Medicine Dispensing and Distribution}}\\[0.3cm]
+  {\LARGE \textbf{(Robot Navigation)}}\\[0.3cm]
+  \rule{\textwidth}{0.9pt}\\[0.7cm]
+
+
+  {\large Abdulswamad Rama Salim  \textbar\ 101229220}\\[0.7cm]
+
+
+  \textbf{\large Bachelor of Engineering (Robotics and Mechatronics) (Honours)}\\[0.5cm]
+
+  \textbf{\large Supervisor:\ Dr.\ Evon Lim Wan Ting}\\[0.1cm]
+  \textbf{Co-Supervisor:\ Ir.\ Chai Pui Ching}\\[1.4cm]
+
+  \includegraphics[width=9cm]{pics/Logo_of_Swinburne_University_of.png} \\[1.4cm] % Adjust the width as needed
+
+
+
+  {\large Swinburne University of Technology}\\[0.1cm]
+  {\large Sarawak Campus}\\[1.5cm]
+  {\large Semester 2 2024}
+\end{titlepage}
+
+
+
+\newpage
+\setcounter{page}{1}
+
+
+\input{Chapters/params.tex}
+\input{Chapters/1_introduction.tex}
+\input{Chapters/2_literature_review.tex}
+%\input{Chapters/3_methodology.tex}
+%\input{Chapters/4_results.tex}
+%\input{Chapters/5_schedule.tex}
+%\input{Chapters/6_conclusion.tex}
+\input{Chapters/text.tex}
+%\input{Chapters/1_imagepro.tex}
+%\input{Chapters/2_pickandplace.tex}
+%\input{Chapters/3_kinematics.tex}
+
+\clearpage
+\phantomsection  % Helps with proper hyperref linking
+% References 
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+
+
+
+\end{document}
+
+

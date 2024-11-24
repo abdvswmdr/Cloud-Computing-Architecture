@@ -1,0 +1,247 @@
+\newpage
+
+
+% GanttHeader setups some parameters for the rest of the diagram
+% #1 Width of the diagram
+% #2 Width of the space reserved for task numbers
+% #3 Width of the space reserved for task names
+% #4 Number of months in the diagram
+% #5 Start year
+% In addition to these parameters, the layout of the diagram is influenced
+% by keys defined below, such as y, which changes the vertical scale
+\def\GanttHeader#1#2#3#4#5{%
+ \pgfmathparse{(#1-#2-#3)/#4}
+ \tikzset{y=8mm, 
+     task number/.style={
+         left, 
+         font=\scriptsize\bfseries, 
+         minimum width=1.2ex, 
+         align=right,
+         text width=1.4ex
+     },
+     task description/.style={text width=#3, right, draw=none,
+           font=\scriptsize\sffamily, xshift=#2,
+           minimum height=2em, text justified},
+     gantt bar/.style={draw=black, fill=blue!30},
+     help lines/.style={draw=black!30, dashed},
+     x=\pgfmathresult pt
+     }
+  \def\totalmonths{#4}
+  % Separate header text that's aligned with "Weeks"
+  \node[anchor=west, xshift=#2] at (0,0.4) {\textbf{\small Task Description}};
+  % Original column starting point (without moving up)
+  \node (Header) [task description] at (0,0) {};
+  \begin{scope}[shift=($(Header.south east)$)]
+    \node[above=0.58cm] at (#4/2,0) {\textbf{\small Weeks}};
+    \foreach \x in {1,...,#4}
+      \node[above] at (\x,0.01) {\pgfmathparse{int(\x+#5)}\footnotesize\pgfmathresult};
+ \end{scope}
+}
+
+% This macro adds a task to the diagram
+% #1 Number of the task
+% #2 Task's name
+% #3 Starting date of the task (month's number, can be non-integer)
+% #4 Task's duration in months (can be non-integer)
+% #5 Deadline flag (0 or 1)
+\def\Task#1#2#3#4#5{%
+\node[task number] at ($(Header.west) + (-0.02ex, -#1+0.049)$) {#1};
+\node[task description] at (0,-#1) {#2};
+\begin{scope}[shift=($(Header.south east)$)]
+  \draw (0,-#1) rectangle +(\totalmonths, 1);
+  \foreach \x in {1,...,\totalmonths}
+    \draw[help lines] (\x,-#1) -- +(0,1);
+  \ifnum#5=1 % If it has a deadline
+    \filldraw[gantt bar] ($(#3, -#1+0.2)$) rectangle +(#4-1,0.6);
+    \filldraw[draw=black, fill=red!30] ($(#3+#4-1, -#1+0.2)$) rectangle +(1,0.6);
+  \else % If it's an ongoing task
+    \filldraw[gantt bar] ($(#3, -#1+0.2)$) rectangle +(#4,0.6);
+  \fi
+\end{scope}
+}
+
+% Example
+
+
+
+\section{Project Planning and Management}
+
+
+\subsection{Plan of Action}
+This project will be conducted primarily within Swinburne University of Technology, Sarawak Campus. The project demonstration, 
+hardware assembly, and testing will be conducted at the university's facilities, including the engineering labs. Necessary 
+components will be sourced through online vendors (OTS), and others will be supplemented by existing components available in the university's
+inventory. Throughout the project, comprehensive documentation, a detailed final report, and a presentation 
+demonstrating the project's outcomes will be conducted for FYRP1 and FYRP2. Weekly meetings will be held with the supervisors 
+to discuss progress challenges and receive feedback. A detailed logbook and meeting minutes of all the activities will 
+be submitted by the end of the semester. As for the project timeline, Final Year Research Project 1 (FYRP1) will mainly cover the project's research part. The idea will also
+be designed using CAD software, and simulation will be conducted for testing and proof of concept. The final project implementation
+will be done in the Final Year Research Project 2 (FYRP2). The Gantt chart for FYRP1 and FYRP2 is shown in Figure \ref{fig:gantt-chart} and \ref{fig:gantt-chart2} respectively.
+
+
+\subsection{Risk Management}
+Some potential risks include a delay in shipment of the project components after ordering, especially the LiDAR sensor, which
+is harder to find from local vendors. In such a case, alternative suppliers will be considered, and other sensors 
+will be used for initial development. Delaying and procrastination also pose a risk to the project, which will be mitigated by regular
+self-monitoring. Progress evaluations from the supervisor will be conducted to ensure adherence to the schedule. Furthermore,  
+technical challenges could arise during the project implementation, such as unexpected hardware failure or difficulty in software integration with 
+the sensors and the ROS2 framework. An iterative approach will be adopted, and a comprehensive testing and debugging strategy will 
+be employed to resolve any technical issues promptly. Finally, the budget allocated for the project might need to be increased, hindering the project's progress. Regular communication with the supervisors will be prioritized to ensure the budget is utilized effectively.
+
+
+\newpage
+
+\subsection{Project Timeline (Gantt Chart)}
+
+
+\vspace{-0.1in}
+
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \GanttHeader{.98\textwidth}{2.1ex}{4.0cm}{14}{0} % 14 weeks in sem 
+    \Task{1}{Project Registration }{0}{2}{1}
+    \Task{2}{Research plan development}{1}{2}{0} % Task 2
+    \Task{3}{Literature review}{2}{3}{0} % Task 3
+    \Task{4}{Mid semester presentation}{3}{3}{1} % Task 4
+    \Task{5}{Research plan}{3}{5}{1} % Task 5
+    \Task{6}{Preliminary testing (simulation)}{6}{5}{0} % Task 6
+    \Task{7}{Proof of concept (simulation)}{8}{4}{0} % Task 7
+    \Task{8}{Poster Presentation}{9}{3}{1} % Task 8
+    \Task{9}{Workbook}{0}{13}{1} % Task 9
+    \Task{10}{Progress Report}{10}{4}{1} % Task 10 
+    
+    % Add legend/key
+    \node[below=1.0cm of current bounding box.south west, anchor=west] {
+      \begin{tikzpicture}[baseline=0]
+        % Legend for ongoing task
+        \draw[fill=blue!30] (0,0) rectangle (0.5,0.3);
+        \node[right, font=\footnotesize] at (0.5,0.15) {Ongoing task};
+        
+        % Legend for deadline
+        \draw[fill=red!30] (3.3,0) rectangle (3.8,0.3);
+        \node[right, font=\footnotesize] at (3.8,0.15) {Deadline};
+      \end{tikzpicture}
+    };
+  \end{tikzpicture}
+  \caption{Final Year Project 1 Timeline Gantt Chart.}\label{fig:gantt-chart}
+  \end{figure}
+  
+  
+
+\vspace{0.2in}
+
+% Example
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+  \GanttHeader{.98\textwidth}{2.1ex}{4.0cm}{14}{0} % 14 weeks in sem 
+  \Task{1}{Order hardware parts}{0}{2}{0}
+  \Task{2}{Hardware assembly/integration}{1}{2}{0} % Task 2
+  \Task{3}{Sensor integration and testing}{2}{3}{0} % Task 3
+  \Task{4}{Implement navigation algorithm}{3}{3}{0} % Task 4
+  \Task{5}{User interface integration}{3}{5}{0} % Task 5
+  \Task{6}{Final choice (algorithms)}{6}{5}{0} % Task 6
+  \Task{7}{Optimizing software / iteration}{8}{4}{0} % Task 7
+  \Task{8}{Validation and perfomance}{9}{3}{0} % Task 8
+  \Task{9}{Workbook}{9}{4}{1} % Task 9
+  \Task{10}{Final Report}{10}{4}{1} % Task 10 
+  
+  % Add legend/key
+  \node[below=1.0cm of current bounding box.south west, anchor=west] {
+    \begin{tikzpicture}[baseline=0]
+      % Legend for ongoing task
+      \draw[fill=blue!30] (0,0) rectangle (0.5,0.3);
+      \node[right, font=\footnotesize] at (0.5,0.15) {Ongoing task};
+      
+      % Legend for deadline
+      \draw[fill=red!30] (3.3,0) rectangle (3.8,0.3);
+      \node[right, font=\footnotesize] at (3.8,0.15) {Deadline};
+    \end{tikzpicture}
+  };
+\end{tikzpicture}
+\caption{Final Year Project 2 Timeline Gantt Chart.}
+\label{fig:gantt-chart2}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\subsection{Bill of Materials}
+The bill of materials is categorised into three different types,
+(a) the mechanical stucture unit, (b) off-the-shelf (OTS) components are the electronics, control devices, 
+sensors, and power sources, (c) the manufacturing tools. The total cost of the project is estimated to be RM888.20. 
+
+\vspace{0.4in}
+
+\begin{table}[h]
+    \centering
+    \scriptsize % Reduces the text size significantly
+    \renewcommand{\arraystretch}{1.4} % Adjust the row height
+
+    % Set the total table width and define individual column widths
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.3cm} >{\raggedright\arraybackslash}p{5.5cm} >{\raggedleft\arraybackslash}p{1.0cm} >{\raggedleft\arraybackslash}p{1.5cm} >{\raggedleft\arraybackslash}p{1.5cm} >{\raggedright\arraybackslash}p{2.2318cm}}
+        \toprule
+        \textbf{No.} & \textbf{Description} & \textbf{Qty} & \textbf{Unit Cost} & \textbf{Total cost} & \textbf{Source of Material} \\
+        \midrule
+        \multicolumn{6}{l}{\textbf{Mechanical Structure Unit}} \\
+        P1&Profile 20x20L I-type 400cm  &400&0.23   & 92.00 &\href{https://shopee.com.my/-Customize-Length-Aluminium-Profile-2020-2040-3030-4040-For-European-Standard-i.118650399.5905411154?sp_atk=386a0d30-c468-47ce-b8a4-6ad3d9f9ddbd&xptdk=386a0d30-c468-47ce-b8a4-6ad3d9f9ddbd}{Shopee}  \\
+        P2&Pivot / Knuckle Joint for 2020 &4&16.50& 66.00  &  \href{https://shopee.com.my/Pivot-Joint-Knuckle-Joint-Swivel-Joint-for-2020-3030-4040-4545-Aluminium-Profile-i.197714890.8716364314?sp_atk=363c4a5d-dac2-4810-b09c-7a37cb79c45d&xptdk=363c4a5d-dac2-4810-b09c-7a37cb79c45d}{Shopee}\\
+        P3&L Corner Bracket Gusset Element (2020)& 18&2.00  & 36.00 & \href{https://shopee.com.my/L-Corner-Bracket-Gusset-Element-L-Bracket-Connector-1720-2028-3030-4040-3060-4080-Aluminium-Profile-i.118650399.7404726140?sp_atk=9cb10872-5679-4217-8a7b-700cf159c424&xptdk=9cb10872-5679-4217-8a7b-700cf159c424}{Shopee}  \\ 
+        P4&L Bracket (Stainless Steel)& 12  &1.20  & 14.40 & \href{https://shopee.com.my/L-Bracket-Solid-Angle-Bracket-Stainless-Steel-Thick-High-Quality-i.243397959.7565902322?sp_atk=bfd4a0f4-841b-4fa1-a8e5-5c514175fb8c&xptdk=bfd4a0f4-841b-4fa1-a8e5-5c514175fb8c}{Shopee} \\ 
+        P5&Axial fan &1&-&-&-  \\
+        P6&Screw / bolt &100&0.30& 30.00 &-  \\
+        P7&Nuts &100& 0.15&15.00 &-  \\
+        P8&Drive wheels (Pneumatic) \diameter120---150mm &2&-&-&-  \\
+        P9&Swivel caster \diameter90-110mm & 1 & 14.70 &   14.70 & \href{https://shopee.com.my/MEDIUM-DUTY-3-INCH-Caster-PU-Wheel-Orange-Rigid-Swivel-With-Brake-360-Degree-Industrial-Quiet-Replacement-Wheel-Trolley-i.1530870.25363469103?sp_atk=fcfd4f24-1d19-45ba-9076-e04b23158c9e&xptdk=fcfd4f24-1d19-45ba-9076-e04b23158c9e}{Shopee} \\
+        P10&Plywood (l by w)&-& 40.00 &   40.00 &-  \\
+        \midrule
+        \multicolumn{6}{l}{\textbf{OTS electronics, sensors and control devices}} \\
+        P11&Raspberry Pi4 8 GB  &1& 389.0 &-& \href{https://my.cytron.io/c-raspberry-pi-main-board}{Cytron} \\
+        P12&NODEMCU ESP32 & 1 &29.00&-& \href{https://my.cytron.io/p-nodemcu-esp32?r=1}{Cytron} \\
+        P13&Arduino UNO R3 ATMEGA328P& 1 &44.90&-& \href{https://shopee.com.my/%F0%9F%94%A5DIP-UNO-R3%F0%9F%94%A5Rev3-V3-Atmel-ATMEGA328P-Compatible-Board-Plug-and-Play-(No-need-download-extra-Arduino-USB-driver)-i.33091591.466533399?sp_atk=e3b3d732-4076-4741-9f4e-09b6b5c0a914&xptdk=e3b3d732-4076-4741-9f4e-09b6b5c0a914}{Shopee}\\
+        P14&8GB MicroSD & 1 & 9.99&-& \href{https://shorturl.at/gBoSd}{Shopee} \\
+        \begin{comment}
+        &3.5'' TFT LCD (ILI9481-R61581, CTE32HR)& 1 & 65.00 & 65.00 & \href{https://shopee.com.my/3.5-Arduino-TFT-LCD-Module-(Colour-Screen)-i.40459773.6011888764?sp_atk=5d9e5d6e-564c-4295-88a1-3b68c3cec2c3&xptdk=5d9e5d6e-564c-4295-88a1-3b68c3cec2c3}{Shopee} \\
+        &4x4 Matrix Keypad& 1 & 12.50 & 12.50 & \href{https://shopee.com.my/Keypad-Matrix-Black-4X4-4X3-Keyboard-Button-Telephone-4*4-4*3-Style-16-12-Key-Compatible-with-Arduino-i.608059940.15946050312?sp_atk=07d7390d-4f01-4074-8a62-9ae8ae1a0be5&xptdk=07d7390d-4f01-4074-8a62-9ae8ae1a0be5}{Shopee} \\
+        \end{comment}
+        P15&Time of Flight VL53L0X V2  & 1 & 15.20 & 15.20  & \href{https://shopee.com.my/VL53L0X-V2-Time-of-Flight-Distance-Sensor-i.6674515.1944349963}{Shopee} \\
+        P16&RP LiDAR A1 M8 (2D)&1 & 340.00& 340.00& \href{https://trade.taobao.com/trade/detail/tradeSnap.htm?spm=a220l.16.0.0.216c25a5QZgyy0&tradeID=2238905640812998885}{Taobao}\\
+        P17&IMU (MPU-9250) & 1 & 39.90 & 39.90& \href{https://shopee.com.my/MPU9250-MPU-9250-9-DOF-IMU-Module-Accelerometer-Gyroscope-Magnetometer-Balancing-Sensor-for-Arduino-i.33091591.678613373?sp_atk=d19e30a6-3796-46fe-b156-b40e4909d709&xptdk=d19e30a6-3796-46fe-b156-b40e4909d709}{Shopee} \\
+        P18&Ultrasonic sensors (HCR-S04)& 3 &-&-&-  \\
+        P19&22.2V LiPo battery 11AH & 2& 84.90& 169.80 & \href{https://shopee.com.my/7.4V-2S-11.1V-3S-25C-30C-1100mah-2200mah-5S-6000mah-22.2V-6S-Lipo-Li-po-Rechargeable-RC-Tamiya-Racing-Car-Drone-Battery-i.33091591.508615851?sp_atk=ad6d1510-cb5d-41f9-aada-10fd3eb6b045&xptdk=ad6d1510-cb5d-41f9-aada-10fd3eb6b045}{Shopee} \\
+        P20&Mini Rocker Switch ON/OFF & 3 & 1.80 & 5.40 & \href{https://shopee.com.my/Mini-Rocker-Switch-ON-OFF-KCD11-6x6-12x12-14x9mm-Tact-Slide-Switch-DIP-SMD-Tactile-Self-Locking-Push-Button-Momentary-i.70429211.11217735748?sp_atk=74eb2c91-1add-4b4d-bee7-c6346d9eb101&xptdk=74eb2c91-1add-4b4d-bee7-c6346d9eb101}{Shopee} \\
+        P21&Emergency Push Button &1& 9.80&9.80 &\href{https://shopee.com.my/LAY37-Emergency-Push-Stop-Red-Button-c-w-Casing-Box-1NO-1NC-i.35009139.11572334265?sp_atk=519450fc-bad1-41cb-9f9b-c65cac283322&xptdk=519450fc-bad1-41cb-9f9b-c65cac283322}{Shopee} \\
+        P22&Buck Converter (XH-M249)&1 &$-$&$-$&\href{https://shopee.com.my/DC-Step-Down-(Fixed-5V)-XH-M249-XY-3606-5A.max-Buck-Converter-5V-9V-12V-24V-i.126211897.16930276280}{Shopee} \\
+        P23&Motors (with encoders) & 2 &-&-&-  \\
+        P24&Motor Driver L298N & 1 &-&-&- \\
+        P25&SIRIM Cables 1.5mm Copper&-&-&-&-  \\
+        P26&M2M M2F M2M F2F GPIO wires &-&-&-&-  \\
+        \midrule
+        \multicolumn{6}{l}{\textbf{Manufacturing Tools}} \\
+        P27&Terminals &-&-&-&-  \\
+        P28&Soldering station &-&-&-&  \\
+        P29&Multimeters &-&-&-&-  \\
+        P30&Breadboards &-&-&-&-  \\
+        P31&Screws &-&-&-&-  \\
+        P32&Fasteners &-&-&-&-  \\
+        \midrule
+        \rowcolor{red!10} & \textcolor{red}{\textbf{\small TOTAL}}  & & & \raggedleft{\textcolor{red}{888.20}} & \\
+        \bottomrule
+    \end{tabular}
+    \caption{Bill of Materials (BOM) for the autonomous medical robot}\label{tab:bom}
+\end{table}
+
+
+
+

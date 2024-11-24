@@ -1,0 +1,232 @@
+\begin{thebibliography}{10}
+
+\bibitem{dzulkefly2024nursing}
+D.~Ahmad, ``is projected at close to 60\% by 2030.''
+  \url{https://www.thestar.com.my/news/nation/2024/05/02/nursing-shortage-projected-at-close-to-60-by-2030-says-dr-dzulkefly},
+  May 2024.
+\newblock Accessed: 2024-09-18.
+
+\bibitem{kennedy2003nursing}
+R.~Kennedy, ``The nursing shortage and the role of technology,'' {\em Nursing
+  Outlook}, vol.~51, no.~3, pp.~S33--S34, 2003.
+
+\bibitem{fawaz2020nurses}
+M.~Fawaz, H.~Anshasi, and A.~Samaha, ``Nurses at the front line of covid-19:
+  Roles, responsibilities, risks, and rights,'' {\em The American Journal of
+  Tropical Medicine and Hygiene}, vol.~103, no.~4, pp.~1341--1342, 2020.
+
+\bibitem{helpmate}
+J.~Evans, ``Helpmate: an autonomous mobile robot courier for hospitals,'' in
+  {\em Proceedings of IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS'94)}, vol.~3, pp.~1695--1700 vol.3, 1994.
+
+\bibitem{laserbased_zheng}
+K.~Zheng, F.~Wu, and X.~Chen, ``Laser-based people detection and obstacle
+  avoidance for a hospital transport robot,'' {\em Sensors}, vol.~21, no.~3,
+  2021.
+
+\bibitem{kruse2013human}
+T.~Kruse, A.~K. Pandey, R.~Alami, and A.~Kirsch, ``Human-aware robot
+  navigation: A survey,'' {\em Robotics and Autonomous Systems}, vol.~61,
+  no.~12, pp.~1726--1743, 2013.
+
+\bibitem{ahn2019hospital}
+H.~S. Ahn, W.~Yep, J.~Lim, B.~K. Ahn, D.~L. Johanson, E.~J. Hwang, M.~H. Lee,
+  E.~Broadbent, and B.~A. MacDonald, ``Hospital receptionist robot v2: Design
+  for enhancing verbal interaction with social skills,'' in {\em 2019 28th IEEE
+  International Conference on Robot and Human Interactive Communication
+  (RO-MAN)}, pp.~1--6, Oct 2019.
+
+\bibitem{ozkil2009navigation}
+A.~G. Özkil, ``Technical report on autonomous mobile robot navigation,'' tech.
+  rep., Technical University of Denmark (DTU), March 2009.
+
+\bibitem{riisgaard2006slam}
+S.~Riisgaard and M.~R. Blas, ``Slam for dummies: A tutorial approach to
+  simultaneous localization and mapping,'' tech. rep., Technical University of
+  Denmark (DTU), 2006.
+\newblock Technical Report.
+
+\bibitem{durrant-whyte2006slam1}
+H.~Durrant-Whyte and T.~Bailey, ``Simultaneous localization and mapping: Part i
+  the essential algorithms,'' {\em IEEE Robotics and Automation Magazine},
+  vol.~13, no.~2, pp.~99--110, 2006.
+
+\bibitem{borenstein1997mobile}
+J.~Borenstein, H.~R. Everett, L.~Feng, and D.~Wehe, ``Mobile robot positioning:
+  Sensors and techniques,'' {\em Journal of Robotic Systems}, vol.~14, no.~4,
+  pp.~231--249, 1997.
+
+\bibitem{PARK1998219}
+K.~Park, H.~Chung, and J.~G. Lee, ``Dead reckoning navigation for autonomous
+  mobile robots,'' {\em IFAC Proceedings Volumes}, vol.~31, no.~3,
+  pp.~219--224, 1998.
+\newblock 3rd IFAC Symposium on Intelligent Autonomous Vehicles 1998 (IAV'98),
+  Madrid, Spain, 25-27 March.
+
+\bibitem{thrun2005probabilistic}
+S.~Thrun, W.~Burgard, and D.~Fox, {\em Probabilistic Robotics}.
+\newblock Cambridge, MA, USA: MIT Press, 2005.
+
+\bibitem{nagla2020hector}
+S.~Nagla, ``2d hector slam of indoor mobile robot using 2d lidar,'' in {\em
+  2020 2nd International Conference on Power, Energy, Control and Transmission
+  Systems (ICPECTS)}, pp.~1--5, IEEE, 2020.
+
+\bibitem{hess2021real}
+X.~Zhang, S.~Zhu, S.~Guo, J.~Li, and H.~Liu, ``Line-based automatic extrinsic
+  calibration of lidar and camera,'' in {\em 2021 IEEE International Conference
+  on Robotics and Automation (ICRA)}, p.~9347–9353, IEEE Press, 2021.
+
+\bibitem{ramadhan2021design}
+S.~F. Ramadhan, M.~Taufik, D.~Novita, and A.~Turnip, ``Design of 2d lidar-based
+  indoor slam for medical robot covid-19,'' in {\em 2021 International
+  Conference on Artificial Intelligence and Mechatronics Systems (AIMS)},
+  pp.~1--5, 2021.
+
+\bibitem{grisetti2007improved}
+G.~Grisetti, C.~Stachniss, and W.~Burgard, ``Improved techniques for grid
+  mapping with rao-blackwellized particle filters,'' {\em IEEE Transactions on
+  Robotics}, vol.~23, no.~6, pp.~1115--1126, 2007.
+
+\bibitem{1570477}
+G.~Grisetti, C.~Stachniss, and W.~Burgard, ``Improving grid-based slam with
+  rao-blackwellized particle filters by adaptive proposals and selective
+  resampling,'' in {\em Proceedings of the 2005 IEEE International Conference
+  on Robotics and Automation}, pp.~2432--2437, April 2005.
+
+\bibitem{alija2015analysis}
+A.~S. Alija, ``Analysis of {Dijkstra's} and {A*} algorithm to find the shortest
+  path,'' master's thesis, Universiti Tun Hussein Onn Malaysia, Johor,
+  Malaysia, September 2015.
+\newblock Faculty of Computer Science and Information Technology.
+
+\bibitem{gul2019comprehensive}
+W.~R. Faiza~Gul and S.~S.~N. Alhady, ``A comprehensive study for robot
+  navigation techniques,'' {\em Cogent Engineering}, vol.~6, no.~1, p.~1632046,
+  2019.
+
+\bibitem{xiang2022combined}
+D.~Xiang, H.~Lin, J.~Ouyang, and D.~Huang, ``Combined improved {A*} and greedy
+  algorithm for path planning of multi-objective mobile robot,'' {\em
+  Scientific Reports}, vol.~12, no.~1, p.~13273, 2022.
+
+\bibitem{ganesan2024hybrid}
+S.~Ganesan, B.~Ramalingam, and R.~E. Mohan, ``A hybrid sampling-based rrt* path
+  planning algorithm for autonomous mobile robot navigation,'' {\em Expert
+  Systems with Applications}, vol.~258, p.~125206, 2024.
+
+\bibitem{mosenlechner2012ros}
+L.~Mösenlechner, ``Introduction to ros,'' in {\em Department of Informatics,
+  Intelligent Autonomous Systems, Technische Universität München}, (Munich,
+  Germany), July 2012.
+\newblock Technical Report.
+
+\bibitem{thomas2014nextgenros}
+D.~Thomas, W.~Woodall, and E.~Fernandez, ``Next-generation ros: Building on
+  dds.'' Presented at ROSCon, Chicago, September 2014.
+\newblock Available: \url{https://www.youtube.com/watch?v=eb0aexxzvXA}.
+
+\bibitem{macenski2020marathon2}
+S.~Macenski, F.~Martin, R.~White, and J.~G. Clavero, ``The marathon 2: A
+  navigation system,'' in {\em 2020 IEEE/RSJ International Conference on
+  Intelligent Robots and Systems (IROS)}, pp.~2718--2725, 2020.
+
+\bibitem{quigley2009ros}
+M.~Quigley, B.~Gerkey, K.~Conley, J.~Faust, T.~Foote, J.~Leibs, E.~Berger,
+  R.~Wheeler, and A.~Ng, ``Ros: an open-source robot operating system,'' in
+  {\em Proceedings of the IEEE International Conference on Robotics and
+  Automation (ICRA) Workshop on Open Source Software}, (Kobe, Japan), 2009.
+
+\bibitem{mardereppstein2010office}
+E.~Marder-Eppstein, E.~Berger, T.~Foote, B.~Gerkey, and K.~Konolige, ``The
+  office marathon: Robust navigation in an indoor office environment,'' in {\em
+  Proceedings of the 2010 IEEE International Conference on Robotics and
+  Automation (ICRA)}, (Anchorage, Alaska, USA), pp.~300--307, IEEE, IEEE, 2010.
+
+\bibitem{abiyev2016robot}
+R.~H. Abiyev, I.~G\"{u}nsel, N.~Akkaya, E.~Aytac, A.~\c{C}a\u{g}man, and
+  S.~Abizada, ``Robot soccer control using behaviour trees and fuzzy logic,''
+  {\em Procedia Comput. Sci.}, vol.~102, p.~477–484, Dec. 2016.
+
+\bibitem{vishwas2021arc}
+V.~N.S., S.~B.R., and S.~T.S.B., ``Arc nav - a 3d navigation stack for
+  autonomous robots,'' in {\em Proceedings of the 2021 IEEE International
+  Conference on Robotics and Automation (ICRA)}, IEEE, 2021.
+
+\bibitem{hornung2013octomap}
+A.~Hornung, K.~M. Wurm, M.~Bennewitz, C.~Stachniss, and W.~Burgard, ``Octomap:
+  An efficient probabilistic 3d mapping framework based on octrees,'' {\em
+  Autonomous Robots}, vol.~34, no.~3, pp.~189--206, 2013.
+
+\bibitem{gammell2015bit}
+J.~D. Gammell, S.~S. Srinivasa, and T.~D. Barfoot, ``Batch informed trees
+  (bit*): Sampling-based optimal planning via the heuristically guided search
+  of implicit random geometric graphs,'' in {\em 2015 IEEE International
+  Conference on Robotics and Automation (ICRA)}, pp.~3067--3074, May 2015.
+
+\bibitem{Kuffner2000RRTconnectAE}
+J.~J. Kuffner and S.~M. LaValle, ``Rrt-connect: An efficient approach to
+  single-query path planning,'' {\em Proceedings 2000 ICRA. Millennium
+  Conference. IEEE International Conference on Robotics and Automation.
+  Symposia Proceedings (Cat. No.00CH37065)}, vol.~2, pp.~995--1001 vol.2, 2000.
+
+\bibitem{labbe2018rtabmap}
+M.~Labb{\'e} and F.~Michaud, ``{RTAB-Map as an open-source lidar and visual
+  simultaneous localization and mapping library for large-scale and long-term
+  online operation},'' {\em Journal of Field Robotics}, vol.~36, no.~2,
+  pp.~416--446, 2019.
+
+\bibitem{nguyen2022microros}
+P.~Nguyen, ``Micro-ros for mobile robotics systems,'' thesis for the degree of
+  master of science in engineering - robotics, Mälardalen University,
+  Västerås, Sweden, 10 2022.
+\newblock 30.0 credits.
+
+\bibitem{kok2020intelligent}
+D.~Kök, İsmail Güdük, P.~Gengeç, E.~S. Sıçım, and R.~Edizkan,
+  ``Development of intelligent companion robot for hospitals,'' in {\em 2020
+  IEEE International Conference on Electrical, Electronics, and Computer
+  Engineering (EECE)}, pp.~1--6, IEEE, 2020.
+
+\bibitem{chung2022improved}
+M.-A. Chung and C.-W. Lin, ``An improved localization of mobile robotic system
+  based on amcl algorithm,'' {\em IEEE Sensors Journal}, vol.~22, no.~1,
+  pp.~900--907, 2022.
+
+\bibitem{jia2023rgbd}
+P.~Jia, ``Research on positioning and navigation of medical robot based on
+  rgb-d visual slam,'' in {\em 2023 4th International Seminar on Artificial
+  Intelligence, Networking and Information Technology (AINIT)}, pp.~627--632,
+  IEEE, June 2023.
+
+\bibitem{makhubela2023vslam}
+J.~K. Makhubela, T.~Zuva, and O.~Y. Agunbiade, ``A review on vision
+  simultaneous localization and mapping (vslam),'' in {\em 2018 International
+  Conference on Intelligent and Innovative Computing Applications (ICONIC)},
+  pp.~1--5, Dec 2018.
+
+\bibitem{baskoro2020autonomous}
+C.~H. A. H.~B. Baskoro, V.~Susanti, H.~M. Saputra, M.~F. Radzi, M.~Mirdanies,
+  and R.~I.~A. Aziz, ``An autonomous mobile robot platform for medical
+  purposes,'' in {\em 2020 International Conference on Sustainable Energy
+  Engineering and Application (ICSEEA)}, pp.~42--44, IEEE, 2020.
+
+\bibitem{dunuwila2024aris}
+D.~M. A.~P. Dunuwila, W.~M. L.~N. Gunawardhana, M.~D. W.~H. Basnayake, Y.~W.~R.
+  Amarasinghe, A.~G. B.~P. Jayasekara, H.~A. G.~C. Premachandra, H.~Tamura, and
+  U.~Tan, ``Aris 1.0: An autonomous multitasking medical service robot for
+  hospital environments,'' in {\em 2024 IEEE International Conference on
+  Robotics and Automation (ICRA)}, pp.~17424--17430, IEEE, 2024.
+
+\bibitem{valner2022scalable}
+R.~Valner, H.~Masnavi, I.~Rybalskii, R.~Põlluäär, E.~Kõiv, A.~Aabloo,
+  K.~Kruusamäe, and A.~K. Singh, ``Scalable and heterogeneous mobile robot
+  fleet-based task automation in crowded hospital environments—a field
+  test,'' {\em Frontiers in Robotics and AI}, vol.~9, pp.~1--12, 2022.
+
+\bibitem{quigley2020ros2}
+M.~Quigley {\em et~al.}, {\em Programming Multiple Robots with ROS 2}.
+\newblock Open Source Robotics Foundation (OSRF), 2020.
+
+\end{thebibliography}
