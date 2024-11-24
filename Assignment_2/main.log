@@ -1,0 +1,331 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.27)  23 NOV 2024 07:50
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/abdvswmdr/Documents/Cloud Computing Architecture/Assignment_2/main.tex"
+(/home/abdvswmdr/Documents/Cloud Computing Architecture/Assignment_2/main.tex
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-30>
+(/usr/local/share/miktex-texmf/tex/latex/base/article.cls
+Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
+(/usr/local/share/miktex-texmf/tex/latex/base/size11.clo
+File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count199
+\c@figure=\count266
+\c@table=\count267
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+) (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count268
+\Gm@cntv=\count269
+\c@Gm@tempcnt=\count270
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks18
+ (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/share/miktex-texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+) (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/ulem/ulem.sty
+\UL@box=\box52
+\UL@hyphenbox=\box53
+\UL@skip=\skip51
+\UL@hook=\toks19
+\UL@height=\dimen152
+\UL@pe=\count271
+\UL@pixel=\dimen153
+\ULC@box=\box54
+Package: ulem 2019/11/18
+\ULdepth=\dimen154
+) (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip52
+\enit@outerparindent=\dimen155
+\enit@toks=\toks20
+\enit@inbox=\box55
+\enit@count@id=\count272
+\enitdp@description=\count273
+)
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 21.
+ (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+) (/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box56
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+ (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen156
+\scratchbox=\box57
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen157
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks22
+) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(65.04256pt, 467.42276pt, 65.04256pt)
+* v-part:(T,H,B)=(65.04256pt, 714.96173pt, 65.04256pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=467.42276pt
+* \textheight=714.96173pt
+* \oddsidemargin=-7.22743pt
+* \evensidemargin=-7.22743pt
+* \topmargin=-44.22743pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\big@size=\dimen158
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 40.
+(/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 40.
+ (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 40.
+ (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 40.
+ (/home/abdvswmdr/.miktex/texmfs/install/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+<pics/pic.png, id=1, 955.06813pt x 482.30188pt>
+File: pics/pic.png Graphic file (type png)
+<use pics/pic.png>
+Package pdftex.def Info: pics/pic.png  used on input line 50.
+(pdftex.def)             Requested size: 448.07378pt x 226.26979pt.
+<pics/0.png, id=2, 1439.3775pt x 940.51375pt>
+File: pics/0.png Graphic file (type png)
+<use pics/0.png>
+Package pdftex.def Info: pics/0.png  used on input line 53.
+(pdftex.def)             Requested size: 448.07378pt x 292.7761pt.
+
+
+[1
+
+{/home/abdvswmdr/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc} <./pics/pic.png (PNG copy)>]
+
+[2 <./pics/0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+<pics/10.png, id=14, 1927.2pt x 957.5775pt>
+File: pics/10.png Graphic file (type png)
+<use pics/10.png>
+Package pdftex.def Info: pics/10.png  used on input line 79.
+(pdftex.def)             Requested size: 419.16621pt x 208.27142pt.
+
+
+[3 <./pics/10.png>]
+<pics/15.png, id=20, 1243.64626pt x 929.4725pt>
+File: pics/15.png Graphic file (type png)
+<use pics/15.png>
+Package pdftex.def Info: pics/15.png  used on input line 96.
+(pdftex.def)             Requested size: 419.16621pt x 313.27924pt.
+
+
+[4 <./pics/15.png>]
+<pics/23.png, id=25, 1923.185pt x 953.5625pt>
+File: pics/23.png Graphic file (type png)
+<use pics/23.png>
+Package pdftex.def Info: pics/23.png  used on input line 112.
+(pdftex.def)             Requested size: 419.16621pt x 207.83467pt.
+
+
+[5 <./pics/23.png>]
+<pics/32.png, id=30, 1923.185pt x 962.59625pt>
+File: pics/32.png Graphic file (type png)
+<use pics/32.png>
+Package pdftex.def Info: pics/32.png  used on input line 129.
+(pdftex.def)             Requested size: 419.16621pt x 209.80363pt.
+
+
+[6 <./pics/32.png>]
+<pics/36a.png, id=35, 1921.1775pt x 970.62625pt>
+File: pics/36a.png Graphic file (type png)
+<use pics/36a.png>
+Package pdftex.def Info: pics/36a.png  used on input line 146.
+(pdftex.def)             Requested size: 419.16621pt x 211.76117pt.
+
+
+[7 <./pics/36a.png>]
+<pics/38.png, id=41, 1922.18124pt x 1084.05pt>
+File: pics/38.png Graphic file (type png)
+<use pics/38.png>
+Package pdftex.def Info: pics/38.png  used on input line 160.
+(pdftex.def)             Requested size: 419.16621pt x 236.39099pt.
+
+
+[8 <./pics/38.png>]
+<pics/40.png, id=46, 1923.185pt x 956.57375pt>
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 177.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 192.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 207.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+
+
+[9 <./pics/40.png>]
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 223.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 238.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+
+
+[10]
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 254.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 274.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+
+
+[11]
+File: pics/40.png Graphic file (type png)
+<use pics/40.png>
+Package pdftex.def Info: pics/40.png  used on input line 284.
+(pdftex.def)             Requested size: 419.16621pt x 208.491pt.
+
+
+[12] (main.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-08-30>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 3055 strings out of 473900
+ 48683 string characters out of 5733584
+ 445629 words of memory out of 5000000
+ 25910 multiletter control sequences out of 15000+600000
+ 566350 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,5n,65p,335b,274s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (12 pages, 1111277 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
